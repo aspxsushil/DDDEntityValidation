@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace EntityValidation
 {
-    public class Class1
+  public abstract class EntityBase
     {
+        public Guid Id { get; set; }
+
+        public abstract bool IsValid();
+
     }
 }
